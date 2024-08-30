@@ -1,0 +1,23 @@
+---
+title: "JIW Data Clean"
+output: html_document
+date: "2023-11-09"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(readr)
+library(readxl)
+```
+
+```{r}
+setwd('/Users/billyswartwout/Documents/JIW')
+UK_3M_yield <- read_xls(path = "UK-3M-Yields")
+```
+
